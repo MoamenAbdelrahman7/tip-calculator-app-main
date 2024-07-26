@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="assets/images/logo.svg" alt="SPLT TTER logo">
+    <section class="container">
+      <div class="left">
+        <div class="bill-field">
+        <label for="bill-input">Bill</label>
+        <span><img src="assets/images/icon-dollar.svg" alt="Dollar sign icon"><input type="number" id="bill-input" name="bill-amount" placeholder="0"></span>
+      </div>
+      <div class="tip-choices">
+        <h3>Select Tip %</h3>
+        <div class="items">
+          <div class="item"><button id="5">5%</button></div>
+          <div class="item"><button id="10">10%</button></div>
+          <div class="item"><button id="15">15%</button></div>
+          <div class="item"><button id="25">25%</button></div>
+          <div class="item"><button id="50">50%</button></div>
+          <div class="item"><input type="number" id="custom-tip" placeholder="Custom"></input></div>
+        </div>
+      </div>
+      <div class="numOfPeople">
+        <small class="error-msg">Can't be zero</small>
+        <label for="numOfPeople">Number Of People</label>
+        <span><img src="assets/images/icon-person.svg" alt="Person icon"><input type="number" id="numOfPeople" name="numOfPeople" placeholder="0"></span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="row">
+        <span class="tip-amount">
+          <h3>Tip Amount</h3>
+          <small>/ Person</small>
+        </span>
+        <h1 id="tip-amount">$0.00</h1>
+      </div>
+      <div class="row">
+        <span class="tip-total-amount">
+          <h3>Total</h3>
+          <small>/ Person</small>
+        </span>
+        <h1 id="total-bill">$0.00</h1>
+      </div>
+
+      <button id="resetBt">RESET</button>
+    </div>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Moamen Abdelrahman</a>.
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
